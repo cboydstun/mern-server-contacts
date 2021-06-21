@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const auth = require('../middleware/auth');
-// const User = require('../models/User');
 const Contact = require('../models/Contact');
 
 // @GET api/contacts - get all contacts associated with user
