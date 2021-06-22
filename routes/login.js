@@ -1,10 +1,14 @@
+//import dependencies
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcrypt');
 require("dotenv").config();
 const jwt = require('jsonwebtoken');
+
+//import middleware
 const auth = require('../middleware/auth');
 
+//import model
 const User = require('../models/User');
 
 // @GET api/login - get logged in user

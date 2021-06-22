@@ -12,7 +12,7 @@ var createError = require('http-errors')
 const app = express();
 
 //declare server
-const PORT = process.env.PORT || 5002;
+const PORT = process.env.SERVER_PORT || 5002;
 
 //initialize middleware services
 app.use(express.json());
