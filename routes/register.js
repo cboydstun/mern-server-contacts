@@ -1,9 +1,11 @@
+//import dependencies
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 require("dotenv").config();
 
+//import model
 const User = require('../models/User');
 
 // @POST api/register - register a user

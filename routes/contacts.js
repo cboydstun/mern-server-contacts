@@ -1,6 +1,12 @@
+//import dependencies
 const express = require('express');
 const router = express.Router();
+var createError = require('http-errors')
+
+//import middleware
 const auth = require('../middleware/auth');
+
+//import model
 const Contact = require('../models/Contact');
 
 // @GET api/contacts - get all contacts associated with user
